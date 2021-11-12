@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0px ;
+    padding: 0px;
+    background:url(./Desktop_bg.png) no-repeat center fixed;
+    background-size: cover;
+    
+    
+
+}
+.base-container{
+  /* width: 90%;
+  height:90%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  right:10%;
+
+ 
+  
+}
+.header{ 
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+}
+.form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+   
+
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    
+}
+.input{ 
+    background: url(./Desktop_TextArea.png);
+    margin-top: 3px;
+    min-width: 17em;
+    height: 30px;
+    padding: 8px 10px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 31px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-weight: bold;
+    
+    
+}
+input:hover {
+    outline: none;
+    box-shadow: 0px 0px 12px 0.8px #d60fd6b2;
+  }
+
+.btn{
+    background: url(./image.jpg) repeat-x ;  
+    background-size: cover;
+   cursor:pointer;
+   min-height: 50px;
+   width:100%;
+   size:100%;
+   margin:20px 0 0 0;
+   padding:8px;
+   border-radius: 13px;
+   color:white;
+   font-size:20px;
+   font-weight: bold;
+
+}
+.anchor{
+    padding-left: 100px;
+}
+@media screen and (max-width: 786px) {
+
+    *{background:url(./iPad_bg.png) no-repeat center fixed;
+        background-size: cover;}
+    .base-container{
+        top:50%;
+        left:10%;
+        display: flex;
+        background:transparent;
+        
+        
+
+     }
+     .header{ 
+        font-size: 45px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bolder;
+        background:#b983bf;
+    }
+    .form {
+        margin-top: 0.5em;
+        display: flex;
+        flex-direction: column;
+        background:transparent;
+        background:#b983bf;
+        
+       
+    
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        background:#b983bf;
+        
+    }
+    .label{ background:#b983bf; }
+    .anchor{ background:#b983bf;}
+    .btn{ 
+        width:50%;
+
+    }
+
+    
+}
+@media screen and (max-width: 365px){
+    *{background:url(./Mobile_Bg.png) no-repeat center fixed;
+        background-size: cover;
+        padding-bottom:90%;
+    }
+
+}
